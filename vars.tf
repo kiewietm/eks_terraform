@@ -1,6 +1,4 @@
-variable "region" {
-  default = "us-east-1"
-}
+variable "region" {}
 
 variable "cross_acc_profile" {
   description = "AWS cli profile"
@@ -72,5 +70,4 @@ variable "instance_public_ip" {
 
 variable "ec2_key_name" {
   description = "Example nodes RSA key name"
-  default     = "martin"
 }

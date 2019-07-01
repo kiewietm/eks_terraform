@@ -5,8 +5,10 @@ data "aws_ami" "eks" {
 
   filter {
     name   = "name"
-    values = ["eks-worker-*"]
+    values = ["amazon-eks-node-*"]
   }
+
+  owners = ["602401143452"]
 }
 
 data "template_file" "kubelet_auth" {
